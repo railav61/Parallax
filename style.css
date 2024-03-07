@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    
+}
+#container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    flex-wrap: wrap;
+}
+.backimg, .frontimg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.backimg{
+transform: translateZ(-50px) scale(7);
+}
+.frontimg{
+    transform: translateZ(-20px) scale(3);
+}
+h1{
+    color: white;
+    font-size: 8em;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 0px;
+    text-shadow: 2px 2px 20px;
+}
+.bg{
+    position: relative;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bg1{
+    background-image: url(./images/surfing.jpg);
+}
+.bg2{
+    background-image: url(./images/cycling.jpeg);
+}
+.bg3{
+    background-image: url(./images/trekking.jpg);
+}
+.sechead{
+    text-align: center;
+    background-color: rgb(45, 45, 45);
+    font-size: 3em;
+}
+.text{
+    color: white;
+    background-color: rgb(45, 45, 45);
+    font-size: 1.5em;
+    padding: 80px;
+}
+.desc:hover{
+    transition:0.5s;
+    transform: scale(2);
+}
+/* .desc:hover::after{
+    transition: 0.5s;
+    transform: scale(1);
+} */
+.desc{
+    color: white;
+    position: absolute;
+    left: 580px;
+    top: 240px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+    font-size: 3em;
+    /* transform: scale(1); */
+}
